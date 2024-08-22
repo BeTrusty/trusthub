@@ -1,0 +1,44 @@
+{
+  "@context": {
+    "reputation_level": "https://schema.org/Text",
+    "github": {
+      "login": "https://schema.org/Text",
+      "public_repos": "https://schema.org/Integer",
+      "public_gists": "https://schema.org/Integer",
+      "followers": "https://schema.org/Integer",
+      "following": "https://schema.org/Integer",
+      "created_at": "https://schema.org/DateTime",
+      "collaborators": "https://schema.org/Integer"
+    },
+    "mercado_libre": {
+      "first_name": "https://schema.org/givenName",
+      "last_name": "https://schema.org/familyName",
+      "email": "https://schema.org/email",
+      "identification": {
+        "number": "https://schema.org/identifier",
+        "type": "https://schema.org/Text"
+      },
+      "seller_experience": "https://schema.org/Text",
+      "seller_reputation": {
+        "transactions": {
+          "total": "https://schema.org/Integer",
+          "completed": "https://schema.org/Integer",
+          "canceled": "https://schema.org/Integer"
+        },
+        "ratings": {
+          "positive": "https://schema.org/Number",
+          "negative": "https://schema.org/Number",
+          "neutral": "https://schema.org/Number"
+        }
+      },
+      "buyer_reputation": {
+        "canceled_transactions": "https://schema.org/Integer",
+        "transactions": {
+          "total": "https://schema.org/Integer",
+          "completed": "https://schema.org/Integer"
+        }
+      },
+      "nickname": "https://schema.org/Text"
+    }
+  }
+}
